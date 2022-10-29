@@ -127,6 +127,7 @@ app.use('/admin', admin);
 app.use("/product", product);
 app.use("/categories", categories);
 
-app.listen(PORT, () => {
-  console.log(`Server is started at: localhost:${PORT}`);
-});
+const port = process.env.PORT || 3000
+app.listen(port, () => {
+    console.log('http://localhost:3000')
+})
